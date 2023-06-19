@@ -17,7 +17,7 @@
                 </ul>
                                 <span class="navbar-text">
                     <a class="btn btn-success" href="#" data-tooltip="tooltip" title="Não tem uma conta? Cadastre-se">Cadastre-se</a>
-                    <a class="btn btn-success"  href="#" data-tooltip="tooltip" title="Tem uma conta? Faça login">Entrar</a>
+                    <a class="btn btn-success" href="#" data-tooltip="tooltip" title="Tem uma conta? Faça login">Entrar</a>
                 </span>
                             </div>
         </nav>

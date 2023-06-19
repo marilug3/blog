@@ -3,6 +3,28 @@ include './../app/configuracao.php';
 include './../app/Libraries/Rota.php';
 include './../app/Libraries/Controller.php';
 include './../app/Libraries/Database.php';
+$db = new Database;
+#testar CRUD
+//criando variáveis e atribuindo valores a elas
+$usuarioId = 10;
+$titulo = 'Título do post';
+$texto = 'Texto do post';
+//inserir dados
+$db->query("INSERT INTO posts (usuario_id, titulo, texto)
+VALUES (:usuario_id, :titulo, :texto)");
+//comando para salvar os dados
+$db->bind(":usuario_id", $usuarioId);
+$db->bind(":titulo", $titulo);
+$db->bind(":texto", $texto);
+
+$db->executa();
+
+echo '<hr>Total Resultados: '.$db->totalResultados();
+echo '<hr>Últimoid: '.$db->ultimoIdInserido();
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
